@@ -1,0 +1,13 @@
+.weather-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-title{
+    display: flex;
+    justify-content: center;
+}
+
+.getweatherbtns{
+display: flex;
+}

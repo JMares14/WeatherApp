@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./Assets/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+    integrity="sha512-t38vG/f94E72wz6pCsuuhcOPJlHKwPy+PY+n1+tJFzdte3hsIgYE7iEpgg/StngunGszVMrRfvwZinrza0vMTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+    integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>My Weather App</title>
+    </head>
+
+    <body>
+        
+        <nav class="container #ffffff white">
+            <div class="row teal #fafafa grey lighten-5">
+              <div class="input-field col s5 #fafafa grey lighten-5">
+                <input value="34.15" id="latitude" type="text" class="validate">
+                <label for="latitude">Lat</label>
+              </div>
+              <div class="input-field col s5 #fafafa grey lighten-5 offset-s2">
+                <input value="-117.34" id="longitude" type="text" class="validate">
+                <label for="longitude">Lon</label>
+              </div>
+            </div>
+            <div class="row getweatherbtns">
+              <div class="col">
+                <button id="btnGet" type="button" class="waves-effect waves-light btn">
+                  Get Weather
+                </button>
+                <button id="btnCurrent" type="button" class="waves-effect waves-light btn">
+                  Use Current Location
+                </button>
+              </div>
+            </div>
+          </nav>
+          
+          <main class="container">
+            <h1 class="weather-title">Weather</h1>
+            <!-- results for weather data -->
+            <div class="weather-data row">
+              <div class="col">
+                <div class="card">
+                  <span class="card-title">Date</span>
+                  <img
+                    src="http://openweathermap.org/img/wn/10d@4x.png"
+                    class="card-img-top"
+                    alt="Weather description"
+                  />
+                  <div class="card-content">
+                    <h4 class="card-title">Weather Label</h4>
+                    <p>High Temp Low Temp</p>
+                    <p>HighFeels like</p>
+                    <p>Pressure</p>
+                    <p>Humidty</p>
+                    <p>UV Index</p>
+                    <p>Precipitation</p>
+                    <p>Dew Point</p>
+                    <p>Wind speed and direction</p>
+                    <p>Sunrise</p>
+                    <p>Sunset</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <script src="./Assets/script.js"></script>
+    </body>
